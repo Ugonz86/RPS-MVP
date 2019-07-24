@@ -8,14 +8,14 @@ namespace RPS
   {
     private static Random rnd = new Random();
     //array of Choices
-    private static List<string> win = new List<string>(){"02", "10","21"};
-    private static List<string> tie = new List<string>(){"00","11","22"};
+    private static List<string> win = new List<string>(){"13", "21","32"};
+    private static List<string> tie = new List<string>(){"11","22","33"};
 
 
     //computer picks an Option
     public static string cpuChoice()
     {
-        int selector = rnd.Next(0,3);
+        int selector = rnd.Next(1,4);
         return selector.ToString();
     }
     //comparison Method
@@ -24,13 +24,13 @@ namespace RPS
       string result = userInput+cpuMove;
       if (win.Contains(result))
       {
-        Console.WriteLine("You win!");
+        Console.WriteLine("\nPlayer 1 wins!");
       } else if (tie.Contains(result))
       {
-        Console.WriteLine("It's a tie!");
+        Console.WriteLine("\nIt's a tie!");
       } else
       {
-        Console.WriteLine("The Computer Wins!");
+        Console.WriteLine("\nPlayer 2 Wins!");
       }
     }
   }
