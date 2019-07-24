@@ -27,11 +27,12 @@ namespace RPS
       } else
       {
         Console.WriteLine("\nPlayer 1: Choose 1 for Rock, 2 for Paper and 3 for Scissors");
-        string playerOne = null;
+        //this next block hides the user input whilst they type
+        string playerOne = null; //hides string input
         while (true)
         {
             var key = System.Console.ReadKey(true);
-            if (key.Key == ConsoleKey.Enter)
+            if (key.Key == ConsoleKey.Enter) //once enter is pressed, stores value of string input
                 break;
             playerOne += key.KeyChar;
         }
@@ -45,13 +46,13 @@ namespace RPS
                 break;
             playerTwo += key.KeyChar;
         }
-        Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.ForegroundColor = ConsoleColor.DarkRed; // changes console text color to chosen value 'DarkRed'
         Console.WriteLine("\nPlayer 1 chose: " + Options[int.Parse(playerOne)-1]);
         Console.ForegroundColor = ConsoleColor.DarkBlue;
         Console.WriteLine("\nPlayer 2 chose: " + Options[int.Parse(playerTwo)-1]);
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Choices.compareChoices(playerOne, playerTwo);
-        Console.ResetColor();
+        Console.ResetColor(); //Resets Console Color to default [black]
       }
       Main();
     }

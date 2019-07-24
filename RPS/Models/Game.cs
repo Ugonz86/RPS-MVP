@@ -24,13 +24,13 @@ namespace RPS
       string result = userInput+cpuMove;
       if (win.Contains(result))
       {
-        Console.WriteLine("\nPlayer 1 wins!");
+        Console.WriteLine("\nPlayer 1 wins!\n");
       } else if (tie.Contains(result))
       {
-        Console.WriteLine("\nIt's a tie!");
+        Console.WriteLine("\nIt's a tie!\n");
       } else
       {
-        Console.WriteLine("\nPlayer 2 Wins!");
+        Console.WriteLine("\nPlayer 2 Wins!\n");
       }
     }
   }
