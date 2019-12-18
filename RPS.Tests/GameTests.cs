@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using RPS;
+using RPS.Models;
+
 
 namespace RPS.Tests
 {

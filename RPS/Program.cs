@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using RPS.Models;
 
 namespace RPS
 {
-  class Game
+  public class Game
   {
     public static void Main()
     {

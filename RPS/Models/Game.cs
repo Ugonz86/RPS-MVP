@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace RPS
+namespace RPS.Models
 {
-
-  class Choices
+  public class Choices
   {
     private static Random rnd = new Random();
     //array of Choices
